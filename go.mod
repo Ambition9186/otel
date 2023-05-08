@@ -2,7 +2,10 @@ module github.com/Ambition9186/otel
 
 go 1.20
 
-replace github.com/micro/go-micro/v2 => github.com/OvertimeDog/go-micro/v2 v2.9.3
+replace (
+	github.com/micro/go-micro/v2 => github.com/OvertimeDog/go-micro/v2 v2.9.3
+	google.golang.org/grpc => google.golang.org/grpc v1.53.0
+)
 
 require (
 	github.com/dustin/go-humanize v1.0.0
